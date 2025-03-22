@@ -74,6 +74,31 @@ const Homepage = () => {
           HMPV is a respiratory virus that affects individuals of all ages. It is particularly severe in infants, the elderly, and immunocompromised individuals. Research is ongoing to develop vaccines and targeted therapies.
         </p>
         {/* Grid Layout for Information Sections */}
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+          <Section title="HMPV Structure" className="section">
+            <div className="bg-white p-4 rounded-lg">
+              <img 
+                src="/metapneumovirus.svg" 
+                alt="HMPV Structure" 
+                className="w-full h-[300px] object-contain mx-auto"
+              />
+            </div>
+          </Section>
+          <Section title="HMPV Overview" className="section">
+            <div className="bg-white p-4 rounded-lg">
+              <img 
+                src="/Hmpvinfo.jpeg" 
+                alt="HMPV Infection" 
+                className="w-full h-[300px] object-contain mx-auto rounded"
+              />
+            </div>
+          </Section>
+        </div>
+        {/* </div> */}
+
+
+        {/* down side  */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
           <Section title="General Info for Non-Researchers" className="section">
             <ul className="list-disc pl-5">
