@@ -1,6 +1,6 @@
 'use client';
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
@@ -10,29 +10,29 @@ export default function Navbar() {
         <nav>
           <ul className="flex space-x-6">
             <li className="nav-item">
-              <a href="home" className="hover:text-blue-400">
+              <Link href="/Home" className="hover:text-blue-400">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a href="genomics" className="hover:text-blue-400">
+              <Link href="/genomics" className="hover:text-blue-400">
                 Genomics
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a href="diagnosis" className="hover:text-blue-400">
+              <Link href="/diagnosis" className="hover:text-blue-400">
                 Diagnosis
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a href="immunotherapy" className="hover:text-blue-400">
+              <Link href="/immunotherapy" className="hover:text-blue-400">
                 Immunotherapy
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a href="drug" className="hover:text-blue-400">
+              <Link href="/drug" className="hover:text-blue-400">
                 Drug Designing
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
               <Link href="/SignIn" className="hover:text-blue-400">
