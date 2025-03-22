@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const geneData = [
   { id: '37626968', link: 'https://www.ncbi.nlm.nih.gov/gene/?term=37626968' },
@@ -8,39 +8,41 @@ const geneData = [
   { id: '37626967', link: 'https://www.ncbi.nlm.nih.gov/gene/?term=37626967' },
   { id: '37626961', link: 'https://www.ncbi.nlm.nih.gov/gene/?term=37626961' },
   { id: '37626962', link: 'https://www.ncbi.nlm.nih.gov/gene/?term=37626962' }
-]
+];
 
 export default function Page() {
   return (
-    <div className="flex justify-center items-center h-screen bg-gray-100">
-      <div className="w-2/3 bg-white shadow-lg rounded-lg p-6">
-        <h1 className="text-2xl font-bold mb-4 text-center">Gene ID Mapping</h1>
-        <table className="w-full border-collapse border border-gray-300">
-          <thead>
-            <tr className="bg-gray-200">
-              <th className="border border-gray-300 px-4 py-2 text-left">Gene ID</th>
-              <th className="border border-gray-300 px-4 py-2 text-left">NCBI Link</th>
-            </tr>
-          </thead>
-          <tbody>
-            {geneData.map((gene, index) => (
-              <tr key={index} className="hover:bg-gray-100">
-                <td className="border border-gray-300 px-4 py-2">{gene.id}</td>
-                <td className="border border-gray-300 px-4 py-2">
-                  <a
-                    href={gene.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-500 hover:underline"
-                  >
-                    Open Link
-                  </a>
-                </td>
+    <div className="flex justify-center items-center min-h-screen bg-gradient-to-r from-gray-950 via-gray-800 to-gray-950">
+      <div className="w-full max-w-3xl bg-gray-900 shadow-lg rounded-lg p-6">
+        <h1 className="text-3xl font-bold mb-6 text-center text-white">Gene ID Mapping</h1>
+        <div className="overflow-x-auto">
+          <table className="w-full border border-gray-700">
+            <thead>
+              <tr className="bg-gray-800 text-gray-200">
+                <th className="border border-gray-700 px-4 py-3 text-left">Gene ID</th>
+                <th className="border border-gray-700 px-4 py-3 text-left">NCBI Link</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {geneData.map((gene, index) => (
+                <tr key={index} className="hover:bg-gray-700 transition duration-200">
+                  <td className="border border-gray-700 px-4 py-3 text-gray-300">{gene.id}</td>
+                  <td className="border border-gray-700 px-4 py-3">
+                    <a
+                      href={gene.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-400 hover:text-blue-300 underline"
+                    >
+                      Open Link
+                    </a>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
-  )
+  );
 }
