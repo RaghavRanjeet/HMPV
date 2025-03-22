@@ -3,39 +3,6 @@ import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import Link from "next/link";
 
-const Header = () => {
-  useEffect(() => {
-    // Create a timeline for header animation
-    const tl = gsap.timeline();
-    tl.from(".nav-item", { 
-      opacity: 0, 
-      y: -20, 
-      duration: 1, 
-      stagger: 0.2,
-      ease: "power2.out"
-    });
-  }, []);
-
-  return (
-    <header className="bg-gray-900 text-white p-4 shadow-md">
-      <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-xl font-bold text-blue-400">HMPV Virus Database</h1>
-        <nav>
-          <ul className="flex space-x-6">
-            <li className="nav-item"><a href="#home" className="hover:text-blue-400">Home</a></li>
-            <li className="nav-item"><a href="#genomics" className="hover:text-blue-400">Genomics</a></li>
-            <li className="nav-item"><a href="#diagnosis" className="hover:text-blue-400">Diagnosis</a></li>
-            <li className="nav-item"><a href="#immunotherapy" className="hover:text-blue-400">Immunotherapy</a></li>
-            <li className="nav-item"><a href="#drug" className="hover:text-blue-400">Drug Designing</a></li>
-            <li className="nav-item"><Link href="/SignIn" className="hover:text-blue-400">Sign In</Link></li>
-            <li className="nav-item"><Link href="/SignUp" className="hover:text-blue-400">Sign Up</Link></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-  );
-};
-
 const Section = ({ title, children }) => {
   return (
     <div className="bg-gray-800 text-white p-6 mt-6 shadow-md rounded-lg">
@@ -59,12 +26,10 @@ const Homepage = () => {
 
     // Set initial styles to ensure elements remain visible after animation
     gsap.set(".section", { clearProps: "all" });
-    gsap.set(".nav-item", { clearProps: "all" });
   }, []);
 
   return (
     <div className="bg-gray-900 min-h-screen text-white">
-      <Header />
       <main className="container mx-auto p-6">
         <h2 className="text-3xl font-bold text-blue-400 text-center">HMPV Virus Database</h2>
         <p className="text-gray-400 text-center mt-2 max-w-2xl mx-auto">
