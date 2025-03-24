@@ -24,16 +24,7 @@ export default function Navbar() {
                 Diagnosis
               </Link>
             </li>
-            <li className="nav-item">
-              <Link href="/immunotherapy" className="hover:text-blue-400">
-                Immunotherapy
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link href="/drug" className="hover:text-blue-400">
-                Drug Designing
-              </Link>
-            </li>
+           
             <li className="nav-item">
               <Link href="/SignIn" className="hover:text-blue-400">
                 Sign In

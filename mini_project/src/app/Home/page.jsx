@@ -77,7 +77,7 @@ const Homepage = () => {
             <ul className="list-disc pl-5">
               <li><Link href="/genomics" className="text-blue-400 hover:underline">Genomics</Link></li>
               <li><Link href="/proteomics" className="text-blue-400 hover:underline">Proteomics</Link></li>
-              <li><Link href="/immunotherapy" className="text-blue-400 hover:underline">Immunotherapy</Link></li>
+              <li><Link href="/host" className="text-blue-400 hover:underline">Host-Pathogen-Interaction</Link></li>
               <li><Link href="/peptide-therapeutics" className="text-blue-400 hover:underline">Peptide-Based Therapeutics</Link></li>
               <li><Link href="/epitope" className="text-blue-400 hover:underline">Epitope </Link></li>
             </ul>
