@@ -79,7 +79,7 @@ const Homepage = () => {
               <li><Link href="/proteomics" className="text-blue-400 hover:underline">Proteomics</Link></li>
               <li><Link href="/immunotherapy" className="text-blue-400 hover:underline">Immunotherapy</Link></li>
               <li><Link href="/peptide-therapeutics" className="text-blue-400 hover:underline">Peptide-Based Therapeutics</Link></li>
-              <li><Link href="/drug-designing" className="text-blue-400 hover:underline">Drug Designing</Link></li>
+              <li><Link href="/epitope" className="text-blue-400 hover:underline">Epitope </Link></li>
             </ul>
           </Section>
           <Section title="Research" className="section">
