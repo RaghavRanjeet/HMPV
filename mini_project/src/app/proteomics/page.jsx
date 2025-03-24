@@ -27,7 +27,7 @@ export default function Page() {
               {geneData.map((gene, index) => (
                 <tr key={index} className="hover:bg-gray-700 transition duration-200">
                   <td className="border border-gray-700 px-4 py-3 text-gray-300">{gene.id}</td>
-                  <td className="border border-gray-700 px-4 py-3">
+                  <td className="border border-gray-700 px-4 py-3">+
                     <a
                       href={gene.link}
                       target="_blank"
