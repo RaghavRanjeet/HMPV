@@ -55,17 +55,58 @@ const Homepage = () => {
               <img
                 src="/metapneumovirus.svg"
                 alt="HMPV Structure"
-                className="w-full h-[300px] object-contain mx-auto"
+                className="w-full h-[400px] object-contain mx-auto"
               />
             </div>
           </Section>
-          <Section title="HMPV Overview" className="section">
+          <Section title="HMPV Overview" className="section text-black">
             <div className="bg-white p-4 rounded-lg">
-              <img
-                src="/Hmpvinfo.jpeg"
-                alt="HMPV Infection"
-                className="w-full h-[300px] object-contain mx-auto rounded"
-              />
+              <h2 className="text-lg font-semibold text-green-600">
+                Human metapneumovirus 00-1
+              </h2>
+              <p className="text-gray-700">
+                <strong>Length:</strong> 13350bp, <strong>Chromosomes:</strong>{" "}
+                1, <strong>Contigs:</strong> 1
+              </p>
+              <div className="mt-4 text-black">
+                <h3 className="text-md font-semibold">General Info</h3>
+                <p>
+                  <strong>Genome ID:</strong> 162145.7017
+                </p>
+                <p>
+                  <strong>Genome Name:</strong> Human metapneumovirus 00-1
+                </p>
+              </div>
+              <div className="mt-4 text-black">
+                <h3 className="text-md font-semibold">Taxonomy Info</h3>
+                <p>
+                  <strong>Taxon ID:</strong> 162145
+                </p>
+                <p>
+                  <strong>Superkingdom:</strong> Viruses
+                </p>
+                <p>
+                  <strong>Kingdom:</strong> Orthornavirae
+                </p>
+                <p>
+                  <strong>Phylum:</strong> Negarnaviricota
+                </p>
+                <p>
+                  <strong>Class:</strong> Monjiviricetes
+                </p>
+                <p>
+                  <strong>Order:</strong> Mononegavirales
+                </p>
+                <p>
+                  <strong>Family:</strong> Pneumoviridae
+                </p>
+                <p>
+                  <strong>Genus:</strong> Metapneumovirus
+                </p>
+                <p>
+                  <strong>Species:</strong> Metapneumovirus hominis
+                </p>
+              </div>
             </div>
           </Section>
         </div>
@@ -168,14 +209,7 @@ const Homepage = () => {
                   Diagnostics (RT-PCR)
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/geographical-tracking"
-                  className="text-blue-400 hover:underline"
-                >
-                  Geographical Tracking
-                </Link>
-              </li>
+
               <li>
                 <Link
                   href="/antibody-therapy"
@@ -200,52 +234,73 @@ const Homepage = () => {
                   Drug Advice
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="https://gisaid.org/"
+                  className="text-blue-400 hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GISAID
+                </Link>
+              </li>
             </ul>
           </Section>
           <Section title="Web Resources" className="section">
             <ul className="list-disc pl-5">
               <li>
                 <Link
-                  href="/ministry-health"
+                  href="https://www.who.int/home/search-results?indexCatalogue=genericsearchindex1&searchQuery=HMVP&wordsMode=AnyWord"
                   className="text-blue-400 hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  Ministry of Health
+                  WHO HMPV Updates
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/test-labs"
+                  href="https://search.cdc.gov/search/?query=HMPV&dpage=1"
                   className="text-blue-400 hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  Test Labs
+                  CDC HMPV Info
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/icmr-updates"
+                  href="https://search.nih.gov/search?utf8=%E2%9C%93&affiliate=nih&query=HMPV&commit=Search"
                   className="text-blue-400 hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  ICMR Updates
+                  NIH Research on HMPV
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/research-articles"
+                  href="https://pubmed.ncbi.nlm.nih.gov/?term=HMPV"
                   className="text-blue-400 hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  Research Articles
+                  PubMed
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/diagnostics-documents"
+                  href="https://www.ecdc.europa.eu/en/search?s=HMPV"
                   className="text-blue-400 hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  Diagnostics Documents
+                  ECDC Reports
                 </Link>
               </li>
             </ul>
           </Section>
+
           <Section title="Status of HMPV" className="section">
             <div className="flex justify-center">
               {/* <img src="https://images.pexels.com/photos/6957946/pexels-photo-6957946.jpeg" alt="HMPV Global Spread" className="w-full rounded-lg shadow-lg" /> */}
