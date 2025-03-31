@@ -142,12 +142,15 @@ const Homepage = () => {
               </li>
               <li>
                 <Link
-                  href="/peptide-therapeutics"
+                  href="/HMPV tree.pdf"
                   className="text-blue-400 hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  Peptide-Based Therapeutics
+                  Phylogenetic Tree Analysis
                 </Link>
               </li>
+
               <li>
                 <Link href="/epitope" className="text-blue-400 hover:underline">
                   Epitope{" "}
