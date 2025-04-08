@@ -2,33 +2,30 @@ import React from "react";
 import { FaLinkedin } from "react-icons/fa";
 
 const guide = {
-  name: "Dr. Meera Sen",
-  role: "Faculty Guide",
-  image: "/team/guide.jpg",
-  linkedin: "https://www.linkedin.com/in/dr-meera-sen",
+  name: "Dr. Ravindra Kumar",
+  role: "Assisant Professer BSED, NITC",
+  image: "/team/guide.jpeg",
+  linkedin: "https://www.linkedin.com/in/ravindra-kumar-phd-nitc/",
 };
 
 const members = [
   {
     index: 1,
-    name: "Nirmal Fageria",
-    role: "Frontend Developer",
-    image: "/team/nirmal.jpg",
-    linkedin: "https://www.linkedin.com/in/nirmal-fageria",
+    name: "Ranjeet Singh Raghav",
+    image: "/team/ranjeet.jpg",
+    linkedin: "https://www.linkedin.com/in/ranjeet-singh-raghav-4875b7258",
   },
   {
     index: 2,
-    name: "Ravi Sharma",
-    role: "Backend Developer",
-    image: "/team/ravi.jpg",
-    linkedin: "https://www.linkedin.com/in/ravi-sharma",
+    name: "Anwin Jospeh",
+    image: "/team/anwin.jpeg",
+    linkedin: "https://www.linkedin.com/in/anwin-joseph-joy-529442257",
   },
   {
     index: 3,
-    name: "Ayesha Khan",
-    role: "UI/UX Designer",
-    image: "/team/ayesha.jpg",
-    linkedin: "https://www.linkedin.com/in/ayesha-khan",
+    name: "Maniraj",
+    image: "/team/mainraj.jpeg",
+    linkedin: "#",
   },
 ];
 
@@ -48,27 +45,30 @@ export default function AboutPage() {
       </p>
 
       {/* Guide Section */}
+   
       <h2 className="text-xl font-semibold text-blue-300 border-b pb-2 mb-4">
         Meet the Guide
       </h2>
       <div className="flex justify-center mb-12">
-        <div className="bg-gray-800 shadow-md rounded-2xl p-4 flex flex-col items-center text-center w-64 mx-auto">
+        <div className="bg-gray-800 shadow-md rounded-2xl overflow-hidden text-center">
           <img
             src={guide.image}
             alt={guide.name}
-            className="w-24 h-24 rounded-full object-cover mb-4"
+            className="w-[250px] h-[190px] object-fit" // increased height + proper Tailwind class
           />
-          <h3 className="text-lg font-semibold text-white">{guide.name}</h3>
-          <p className="text-sm text-gray-400">{guide.role}</p>
-          <a
-            href={guide.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-2 text-blue-400 hover:text-blue-300 flex items-center gap-1"
-          >
-            <FaLinkedin size={18} />
-            <span className="text-sm">LinkedIn</span>
-          </a>
+          <div className="p-4">
+            <h3 className="text-lg font-semibold text-white">{guide.name}</h3>
+            <p className="text-sm text-gray-400">{guide.role}</p>
+            <a
+              href={guide.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 inline-flex items-center gap-1 text-blue-400 hover:text-blue-300"
+            >
+              <FaLinkedin size={18} />
+              <span className="text-sm">LinkedIn</span>
+            </a>
+          </div>
         </div>
       </div>
 
@@ -83,35 +83,39 @@ export default function AboutPage() {
       </p>
 
       {/* Team Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-center item-center">
         {members.map((member) => (
           <div
             key={member.index}
-            className="bg-gray-800 shadow-md rounded-2xl p-4 flex flex-col items-center text-center w-64 mx-auto"
+            className="bg-gray-800 shadow-md rounded-2xl w-64 overflow-hidden text-center"
           >
             <img
               src={member.image}
               alt={member.name}
-              className="w-24 h-24 rounded-full object-cover mb-4"
+              className="w-[250px] h-[190px] object-cover object-top"
             />
-            <h3 className="text-lg font-semibold text-white">{member.name}</h3>
-            <p className="text-sm text-gray-400">{member.role}</p>
-            <a
-              href={member.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-2 text-blue-400 hover:text-blue-300 flex items-center gap-1"
-            >
-              <FaLinkedin size={18} />
-              <span className="text-sm">LinkedIn</span>
-            </a>
+            <div className="p-4">
+              <h3 className="text-lg font-semibold text-white">
+                {member.name}
+              </h3>
+            
+              <a
+                href={member.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 inline-flex items-center gap-1 text-blue-400 hover:text-blue-300"
+              >
+                <FaLinkedin size={18} />
+                <span className="text-sm">LinkedIn</span>
+              </a>
+            </div>
           </div>
         ))}
       </div>
 
       {/* Credits */}
       <div className="mt-12 text-sm text-gray-500 text-center">
-        <p>Made with ❤️ by the HMPV Awareness Team.</p>
+        <p>Made with ❤️ by the PathoVerse Team.</p>
         <p>© {new Date().getFullYear()} All rights reserved.</p>
       </div>
     </div>
