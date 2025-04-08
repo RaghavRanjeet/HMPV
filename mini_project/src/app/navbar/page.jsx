@@ -20,12 +20,12 @@ export default function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="/diagnosis" className="hover:text-blue-400">
-                Diagnosis
+              <Link href="/about" className="hover:text-blue-400">
+                About
               </Link>
             </li>
            
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link href="/SignIn" className="hover:text-blue-400">
                 Sign In
               </Link>
@@ -34,7 +34,7 @@ export default function Navbar() {
               <Link href="/SignUp" className="hover:text-blue-400">
                 Sign Up
               </Link>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </div>

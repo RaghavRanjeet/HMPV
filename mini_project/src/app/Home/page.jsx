@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import Link from "next/link";
-
+import footer from  '../footer/page'
 const Section = ({ title, children }) => {
   return (
     <div className="bg-gray-800 text-white p-6 mt-6 shadow-md rounded-lg">
@@ -303,12 +303,13 @@ const Homepage = () => {
 
           <Section title="Status of HMPV" className="section">
             <div className="flex justify-center">
-              {/* <img src="https://images.pexels.com/photos/6957946/pexels-photo-6957946.jpeg" alt="HMPV Global Spread" className="w-full rounded-lg shadow-lg" /> */}
+              <img src="/status.jpeg" alt="HMPV Global Spread" className="w-full rounded-lg shadow-lg" />
             </div>
             <p className="text-gray-400 text-center mt-2">
               Global and regional statistics on HMPV infections.
             </p>
           </Section>
+         
         </div>
       </main>
     </div>
