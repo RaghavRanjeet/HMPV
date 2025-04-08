@@ -31,7 +31,7 @@ const members = [
 
 export default function AboutPage() {
   return (
-    <div className="p-6 max-w-5xl mx-auto text-white">
+    <div className="p-6 max-w-5xl mx-auto text-white items-center justify-center bg-gray-900">
       {/* Website Info */}
       <h1 className="text-3xl font-bold text-blue-300 border-b pb-2 mb-4">
         About This Website
@@ -45,7 +45,7 @@ export default function AboutPage() {
       </p>
 
       {/* Guide Section */}
-   
+
       <h2 className="text-xl font-semibold text-blue-300 border-b pb-2 mb-4">
         Meet the Guide
       </h2>
@@ -83,7 +83,8 @@ export default function AboutPage() {
       </p>
 
       {/* Team Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-center itemsx-center">
+    
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-center items-center">
         {members.map((member) => (
           <div
             key={member.index}
@@ -92,13 +93,13 @@ export default function AboutPage() {
             <img
               src={member.image}
               alt={member.name}
-              className="w-[250px] h-[190px] object-cover object-top"
+              className="w-[250px] h-[190px] object-cover object-top mx-auto"
             />
             <div className="p-4">
               <h3 className="text-lg font-semibold text-white">
                 {member.name}
               </h3>
-            
+
               <a
                 href={member.linkedin}
                 target="_blank"

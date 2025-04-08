@@ -25,6 +25,11 @@ export default function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
+              <Link href="/proteomics" className="hover:text-blue-400">
+                Proteomics
+              </Link>
+            </li>
+            <li className="nav-item">
               <Link href="/about" className="hover:text-blue-400">
                 About
               </Link>

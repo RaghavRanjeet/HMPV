@@ -133,7 +133,7 @@ const Homepage = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Symptoms and Prevention (refer GPS Raghava site)
+                  Symptoms and Prevention
                 </Link>
               </li>
               <li>
