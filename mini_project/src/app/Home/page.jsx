@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import Link from "next/link";
-import footer from  '../footer/page'
+import Footer from "../footer/page";
 const Section = ({ title, children }) => {
   return (
     <div className="bg-gray-800 text-white p-6 mt-6 shadow-md rounded-lg">
@@ -312,6 +312,7 @@ const Homepage = () => {
          
         </div>
       </main>
+      <Footer/>
     </div>
   );
 };

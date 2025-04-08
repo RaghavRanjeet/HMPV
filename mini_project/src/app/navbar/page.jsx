@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import React from "react";
 import Link from "next/link";
 
@@ -6,7 +6,12 @@ export default function Navbar() {
   return (
     <header className="bg-gray-900 text-white p-4 shadow-md border-b border-gray-700">
       <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-xl font-bold text-blue-400">HMPV Virus Database</h1>
+        <h1 className="text-xl font-bold text-blue-400">
+          {" "}
+          <Link href="/Home" className="hover:text-blue-400">
+            HMPV Virus Database
+          </Link>
+        </h1>
         <nav>
           <ul className="flex space-x-6">
             <li className="nav-item">
@@ -24,7 +29,7 @@ export default function Navbar() {
                 About
               </Link>
             </li>
-           
+
             {/* <li className="nav-item">
               <Link href="/SignIn" className="hover:text-blue-400">
                 Sign In
