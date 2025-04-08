@@ -83,7 +83,7 @@ export default function AboutPage() {
       </p>
 
       {/* Team Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-center item-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-center itemsx-center">
         {members.map((member) => (
           <div
             key={member.index}

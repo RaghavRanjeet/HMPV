@@ -201,40 +201,7 @@ const Homepage = () => {
           </Section>
           <Section title="Research" className="section">
             <ul className="list-disc pl-5">
-              <li>
-                <Link
-                  href="/diagnostics-rtpcr"
-                  className="text-blue-400 hover:underline"
-                >
-                  Diagnostics (RT-PCR)
-                </Link>
-              </li>
-
-              <li>
-                <Link
-                  href="/antibody-therapy"
-                  className="text-blue-400 hover:underline"
-                >
-                  Antibody Therapy
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/epitope-vaccine"
-                  className="text-blue-400 hover:underline"
-                >
-                  Epitope-Based Vaccine
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/drug-advice"
-                  className="text-blue-400 hover:underline"
-                >
-                  Drug Advice
-                </Link>
-              </li>
-              <li>
+            <li>
                 <Link
                   href="https://gisaid.org/"
                   className="text-blue-400 hover:underline"
@@ -244,8 +211,46 @@ const Homepage = () => {
                   GISAID
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="https://search.cdc.gov/search/?query=HMPV&dpage=1"
+                  className="text-blue-400 hover:underline"
+                >
+                  Diagnostics (RT-PCR)
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  href="https://pubmed.ncbi.nlm.nih.gov/?term=hmpv"
+                  className="text-blue-400 hover:underline"
+                >
+                  Antibody Therapy
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  href="https://www.iedb.org/"
+                  className="text-blue-400 hover:underline"
+                >
+                  Epitope-Based Vaccine
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  href="https://go.drugbank.com/releases/latest"
+                  className="text-blue-400 hover:underline"
+                >
+                  Drug Advice
+                </Link>
+              </li>
+
+             
             </ul>
           </Section>
+
           <Section title="Web Resources" className="section">
             <ul className="list-disc pl-5">
               <li>
@@ -303,16 +308,19 @@ const Homepage = () => {
 
           <Section title="Status of HMPV" className="section">
             <div className="flex justify-center">
-              <img src="/status.jpeg" alt="HMPV Global Spread" className="w-full rounded-lg shadow-lg" />
+              <img
+                src="/status.jpeg"
+                alt="HMPV Global Spread"
+                className="w-full rounded-lg shadow-lg"
+              />
             </div>
             <p className="text-gray-400 text-center mt-2">
               Global and regional statistics on HMPV infections.
             </p>
           </Section>
-         
         </div>
       </main>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
