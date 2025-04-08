@@ -23,7 +23,7 @@ const members = [
   },
   {
     index: 3,
-    name: "Maniraj",
+    name: "Sreeram Maniraj ",
     image: "/team/mainraj.jpeg",
     linkedin: "#",
   },
@@ -84,35 +84,35 @@ export default function AboutPage() {
 
       {/* Team Cards */}
     
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-center items-center">
-        {members.map((member) => (
-          <div
-            key={member.index}
-            className="bg-gray-800 shadow-md rounded-2xl w-64 overflow-hidden text-center"
+      {/* Team Cards */}
+<div className="flex justify-center">
+  <div className="inline-grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    {members.map((member) => (
+      <div
+        key={member.index}
+        className="bg-gray-800 shadow-md rounded-2xl w-64 overflow-hidden text-center"
+      >
+        <img
+          src={member.image}
+          alt={member.name}
+          className="w-[250px] h-[190px] object-cover object-top mx-auto"
+        />
+        <div className="p-4">
+          <h3 className="text-lg font-semibold text-white">{member.name}</h3>
+          <a
+            href={member.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-2 inline-flex items-center gap-1 text-blue-400 hover:text-blue-300"
           >
-            <img
-              src={member.image}
-              alt={member.name}
-              className="w-[250px] h-[190px] object-cover object-top mx-auto"
-            />
-            <div className="p-4">
-              <h3 className="text-lg font-semibold text-white">
-                {member.name}
-              </h3>
-
-              <a
-                href={member.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-2 inline-flex items-center gap-1 text-blue-400 hover:text-blue-300"
-              >
-                <FaLinkedin size={18} />
-                <span className="text-sm">LinkedIn</span>
-              </a>
-            </div>
-          </div>
-        ))}
+            <FaLinkedin size={18} />
+            <span className="text-sm">LinkedIn</span>
+          </a>
+        </div>
       </div>
+    ))}
+  </div>
+</div>
 
       {/* Credits */}
       <div className="mt-12 text-sm text-gray-500 text-center">
