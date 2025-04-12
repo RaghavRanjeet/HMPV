@@ -10,7 +10,6 @@ HMPV is a web-based platform designed to provide comprehensive insights into mic
 
 - 🔍 Browse detailed *genomics, **proteomics, and **epitope* data
 - 🧠 Visualizations and tables for better understanding
-- 🔐 Secure Sign In / Sign Up system
 - 📊 Graphical representation of complex datasets
 - 📱 Responsive design for mobile and desktop
 - ⚡ Built with Next.js 15 and modern web stack
@@ -20,10 +19,7 @@ HMPV is a web-based platform designed to provide comprehensive insights into mic
 ## 📦 Tech Stack
 
 - *Frontend*: Next.js 15, React, Tailwind CSS (or CSS Modules)
-- *Backend*: Node.js (if applicable)
-- *Database: [e.g., PostgreSQL / Firebase / MongoDB] *(if used)
-- *Auth: [e.g., NextAuth.js / Firebase Auth] *(if used)
-- *Data Visualization: Chart.js / D3.js *(if applicable)
+- *Backend*: Node.js 
 
 ---
 
