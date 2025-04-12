@@ -3,7 +3,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 const guide = {
   name: "Dr. Ravindra Kumar",
-  role: "Assisant Professer BSED, NITC",
+  role: "Assistant Professer BSED, NITC",
   image: "/team/guide.jpeg",
   linkedin: "https://www.linkedin.com/in/ravindra-kumar-phd-nitc/",
 };
