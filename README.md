@@ -33,7 +33,7 @@ HMPV is a web-based platform designed to provide comprehensive insights into mic
 
 ```bash
 # Clone the repo
-git clone https://github.com/yourusername/hmpv.git
+git clone https://github.com/RaghavRanjeet/HMPV
 cd hmpv
 
 # Install dependencies
